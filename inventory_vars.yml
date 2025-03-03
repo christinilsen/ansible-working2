@@ -1,0 +1,11 @@
+all:
+  children:
+    webservers:
+      hosts:
+        webserver1:
+          ansible_host: 54.193.29.220
+          ansible_connection: winrm
+          ansible_winrm_transport: ntlm
+          ansible_winrm_server_cert_validation: ignore
+          ansible_user: Administrator
+          ansible_password: JustM300
